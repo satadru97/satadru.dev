@@ -1,28 +1,40 @@
-name: Deploy to GitHub Pages
-
+name: Publish to GH Pages
 on:
   push:
     branches:
       - main
+  pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          submodules: true
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: '0.124.1'
+      - name: Checkout destination
+        uses: actions/checkout@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          ref: gh-pages
+          path: built-site
 
-    - name: Build
-      run: hugo --environment='production'
+      - name: Setup Hugo
+        run: |
+          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_0.124.1_linux-amd64.tar.gz'
+          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo --environment='production'     
+      - name: Build
+        run: ${RUNNER_TEMP}/hugo
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.SATADRU_DEV_TOKEN }}
-        publish_dir: ./public
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        run: |
+          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          cd ${GITHUB_WORKSPACE}/built-site
+          git add .
+          git config user.name 'Satadru Mallick'
+          git config user.email 'mallick@satadru.dev'
+          git commit -m 'Updated site'
+          git push          
