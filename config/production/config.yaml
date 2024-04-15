@@ -50,7 +50,7 @@ markup:
 
 params:
   title: "Satadru Mallick"
-  description: Text about my cool site
+  description: Welcome to satadru.dev!
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
