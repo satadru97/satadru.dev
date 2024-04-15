@@ -1,5 +1,4 @@
 relativeURLs: true
-baseURL: 
 languageCode: en-us
 title: My New Hugo Site
 theme: hugo-profile
