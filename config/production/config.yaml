@@ -50,7 +50,7 @@ markup:
 
 params:
   title: "Satadru Mallick"
-  description: Welcome to satadru.dev!
+  description: Welcome to satadru.dev, the personal website of Satadru Mallick
   # staticPath: ""  # The path to serve the static files from
   favicon: "/favicon.ico"
 
@@ -72,7 +72,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "dark" # light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -126,7 +126,7 @@ params:
     image: /images/me.png
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
