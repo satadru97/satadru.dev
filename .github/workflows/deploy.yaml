@@ -30,45 +30,15 @@ jobs:
       - name: Clean and Rebuild
         run: |
           rm -rf public
-          ${RUNNER_TEMP}/hugo --environment='production' --minify &
-          ${RUNNER_TEMP}/hugo --environment='production' --minify &
-          wait
-
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-
-      - name: Cache Hugo Modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/hugo_modules
-          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
-
-      - name: Gzip Compression
-        run: |
-          find public -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -9 -k {} \;
-          find public -type f \( -name "*.html.gz" -o -name "*.css.gz" -o -name "*.js.gz" \) -exec mv {} {}.gz \;
-
-      - name: Optimize Images
-        run: |
-          npm install imagemin imagemin-cli
-          npx imagemin ./public/images/* --out-dir=./public/images
-
-      - name: Purge Unused CSS
-        run: |
-          npm install purgecss
-          npx purgecss --css ./public/css/styles.css --content ./public/**/*.html --output ./public/css/
+          ${RUNNER_TEMP}/hugo --environment='production'
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          rm -rf ${GITHUB_WORKSPACE}/built-site/*
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
           git config user.name 'Satadru Mallick'
           git config user.email 'mallick@satadru.dev'
-          git commit -m 'Updated site with minified and gzipped assets'
+          git commit -m 'Updated site'
           git push          
