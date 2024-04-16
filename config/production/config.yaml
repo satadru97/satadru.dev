@@ -2,7 +2,7 @@ relativeURLs: true
 baseURL: https://satadru97.github.io/satadru.dev
 languageCode: en-us
 title: Satadru Mallick
-theme: hugo-profile
+theme: satadru-profile
 
 outputs:
   home:

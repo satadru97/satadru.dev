@@ -1,7 +1,7 @@
 relativeURLs: true
 languageCode: en-us
 title: Satadru Mallick
-theme: hugo-profile
+theme: satadru-profile
 
 outputs:
   home:
