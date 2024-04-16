@@ -1,1 +1,15 @@
-body{font-family:Lora,serif!important}#secondary-font,.secondary-font{font-family:Lora,serif}#primary-font,.primary-font{font-family:Alata,sans-serif}#default-font,.default-font{font-family:Roboto,sans-serif}
+body {
+    font-family: Lora, serif !important;
+}
+#secondary-font,
+.secondary-font {
+    font-family: Lora, serif;
+}
+#primary-font,
+.primary-font {
+    font-family: Alata, sans-serif;
+}
+#default-font,
+.default-font {
+    font-family: Roboto, sans-serif;
+}

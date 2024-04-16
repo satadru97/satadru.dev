@@ -1,1 +1,191 @@
-#single{padding:60px 0;line-height:1.7em;font-size:17px}#single .title>h1{opacity:.8;color:var(--text-color)!important}#single .title small{opacity:.7}#single .featured-image{padding:0 1rem 1rem}#single .featured-image img{border-radius:1rem;box-shadow:0 8px 56px rgba(15,80,100,.16);margin-bottom:1rem}#single .page-content a{display:inline-block;text-decoration:none;color:var(--primary-color)!important}#single .page-content a::after{content:"";display:block;width:0;height:2px;bottom:.37em;background-color:var(--primary-color);transition:.25s cubic-bezier(.645, .045, .355, 1);opacity:.5}#single .page-content a:active::after,#single .page-content a:focus::after,#single .page-content a:hover::after{width:100%}#single .page-content h1,#single .page-content h2,#single .page-content h3,#single .page-content h4,#single .page-content h5,#single .page-content h6{color:var(--primary-color)!important;margin-bottom:.7em;opacity:.9}#single .page-content blockquote,#single .page-content pre,#single .page-content pre>code{color:var(--text-secondary-color)!important}#single .page-content blockquote{padding:20px 30px;border-left:6px solid var(--primary-color)!important;font-weight:600;font-size:20px;margin:30px 0;border-radius:5px}#single .page-content blockquote,#single .page-content blockquote *{background-color:var(--secondary-color)!important}#single .page-content table{width:auto;border-radius:5px;padding:.1rem;margin-bottom:1.2em;max-width:100%;display:block;overflow-x:auto;opacity:.8}#single .page-content table>tr{height:40px!important}#single .page-content table>thead>tr>th{padding:.5rem!important;background-color:var(--primary-color)!important;color:var(--secondary-color)!important;border:1px solid var(--secondary-color);opacity:.9}#single .page-content table>tbody>tr>td{padding:.5rem!important;border:1px solid var(--secondary-color);background-color:var(--secondary-color)!important;opacity:.9}#single .page-content table>thead>tr{background-color:var(--secondary-color)!important;color:var(--secondary-color)!important}#single .page-content pre{border-radius:.7em!important;margin:5px 5px 2em;padding:2em;background-color:var(--secondary-color)!important;max-height:450px}#single .page-content code{color:var(--primary-color)!important}#single .page-content kbd,#single .page-content mark{color:var(--primary-color)!important;background-color:var(--secondary-color)!important}#single .page-content ol,#single .page-content ul{margin-bottom:1.2em;padding-left:1.5em;list-style-position:inside;opacity:.9}#single aside,#single aside.aboutImg{padding:.7rem 1rem}#single .page-content ol li li,#single .page-content ul li li{margin-bottom:.5em;padding-left:1.5em}#single aside{border-radius:.7rem;margin-bottom:1em}#single .sticky-sidebar{position:sticky;top:150px}#single aside.aboutImg img{border-radius:1.5rem!important;position:relative;max-width:100%}@media (min-width:768px) and (max-width:1024px){#single aside.aboutImg img{width:60%}}#single aside.aboutImg h5{margin:.7em 0 1em;color:var(--text-color)}#single aside.aboutImg .img-icon img{width:1em}#single aside.aboutImg .aboutImg-content,#single aside.aboutImg .aboutImg-content ul{margin-bottom:1em;opacity:.9}#single aside.aboutImg .aboutImg-content ul li a{border:1px solid var(--primary-color);padding:.7rem;color:var(--text-color);border-radius:10px;overflow:hidden}#single aside.aboutImg .aboutImg-content ul li{margin:.7rem .5rem .7rem 0}#single aside.aboutImg .aboutImg-content ul li:hover a{opacity:.8;color:var(--primary-color)}#single #topScroll{display:none;position:fixed;bottom:20px;right:20px;z-index:99;border:none;outline:0;background-color:var(--secondary-color);color:var(--primary-color);cursor:pointer;border-radius:10px}#single #topScroll:hover{background-color:var(--primary-color);color:var(--secondary-color);transition:.5s;box-shadow:0 0 10px rgba(0,0,0,.2)}
+#single {
+    padding: 60px 0;
+    line-height: 1.7em;
+    font-size: 17px;
+}
+#single .title > h1 {
+    opacity: 0.8;
+    color: var(--text-color) !important;
+}
+#single .title small {
+    opacity: 0.7;
+}
+#single .featured-image {
+    padding: 0 1rem 1rem;
+}
+#single .featured-image img {
+    border-radius: 1rem;
+    box-shadow: 0 8px 56px rgba(15, 80, 100, 0.16);
+    margin-bottom: 1rem;
+}
+#single .page-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+#single .page-content a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    bottom: 0.37em;
+    background-color: var(--primary-color);
+    transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0.5;
+}
+#single .page-content a:active::after,
+#single .page-content a:focus::after,
+#single .page-content a:hover::after {
+    width: 100%;
+}
+#single .page-content h1,
+#single .page-content h2,
+#single .page-content h3,
+#single .page-content h4,
+#single .page-content h5,
+#single .page-content h6 {
+    color: var(--primary-color) !important;
+    margin-bottom: 0.7em;
+    opacity: 0.9;
+}
+#single .page-content blockquote,
+#single .page-content pre,
+#single .page-content pre > code {
+    color: var(--text-secondary-color) !important;
+}
+#single .page-content blockquote {
+    padding: 20px 30px;
+    border-left: 6px solid var(--primary-color) !important;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+#single .page-content blockquote,
+#single .page-content blockquote * {
+    background-color: var(--secondary-color) !important;
+}
+#single .page-content table {
+    width: auto;
+    border-radius: 5px;
+    padding: 0.1rem;
+    margin-bottom: 1.2em;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    opacity: 0.8;
+}
+#single .page-content table > tr {
+    height: 40px !important;
+}
+#single .page-content table > thead > tr > th {
+    padding: 0.5rem !important;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    border: 1px solid var(--secondary-color);
+    opacity: 0.9;
+}
+#single .page-content table > tbody > tr > td {
+    padding: 0.5rem !important;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color) !important;
+    opacity: 0.9;
+}
+#single .page-content table > thead > tr {
+    background-color: var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+}
+#single .page-content pre {
+    border-radius: 0.7em !important;
+    margin: 5px 5px 2em;
+    padding: 2em;
+    background-color: var(--secondary-color) !important;
+    max-height: 450px;
+}
+#single .page-content code {
+    color: var(--primary-color) !important;
+}
+#single .page-content kbd,
+#single .page-content mark {
+    color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+}
+#single .page-content ol,
+#single .page-content ul {
+    margin-bottom: 1.2em;
+    padding-left: 1.5em;
+    list-style-position: inside;
+    opacity: 0.9;
+}
+#single aside,
+#single aside.aboutImg {
+    padding: 0.7rem 1rem;
+}
+#single .page-content ol li li,
+#single .page-content ul li li {
+    margin-bottom: 0.5em;
+    padding-left: 1.5em;
+}
+#single aside {
+    border-radius: 0.7rem;
+    margin-bottom: 1em;
+}
+#single .sticky-sidebar {
+    position: sticky;
+    top: 150px;
+}
+#single aside.aboutImg img {
+    border-radius: 1.5rem !important;
+    position: relative;
+    max-width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #single aside.aboutImg img {
+        width: 60%;
+    }
+}
+#single aside.aboutImg h5 {
+    margin: 0.7em 0 1em;
+    color: var(--text-color);
+}
+#single aside.aboutImg .img-icon img {
+    width: 1em;
+}
+#single aside.aboutImg .aboutImg-content,
+#single aside.aboutImg .aboutImg-content ul {
+    margin-bottom: 1em;
+    opacity: 0.9;
+}
+#single aside.aboutImg .aboutImg-content ul li a {
+    border: 1px solid var(--primary-color);
+    padding: 0.7rem;
+    color: var(--text-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#single aside.aboutImg .aboutImg-content ul li {
+    margin: 0.7rem 0.5rem 0.7rem 0;
+}
+#single aside.aboutImg .aboutImg-content ul li:hover a {
+    opacity: 0.8;
+    color: var(--primary-color);
+}
+#single #topScroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+#single #topScroll:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

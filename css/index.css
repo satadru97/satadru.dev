@@ -1,1 +1,418 @@
-.tooltip,.tooltip-inner{line-height:1rem}#hero a.btn.social-icon,#hero h2{color:var(--primary-color)!important}#about .image img,#hero .image img{box-shadow:0 8px 56px rgba(15,80,100,.16)}#achievements .card,#achievements .card-text,#contact .btn,#education .card *,#experience .experience-container,#hero a.btn:hover{background-color:var(--secondary-color)!important}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-bottom{0%{transform:translateY(50px);opacity:0}100%{transform:translateY(0);opacity:1}}@keyframes fade-left{0%{transform:translateX(-10px);opacity:0}100%{transform:translateX(0);opacity:1}}@keyframes fade-right{0%{transform:translateX(20px);opacity:0}100%{transform:translateX(0);opacity:1}}@keyframes fade-up{0%{transform:translateY(-10px);opacity:0}100%{transform:translateY(0);opacity:1}}header .navbar.animate{animation:.5s ease-in fade-up}.tooltip{border-radius:.5rem!important}.tooltip .tooltip-arrow{visibility:hidden!important}#hero{min-height:100vh;line-height:2rem;max-width:100%}#hero .content.animate{animation:1s ease-out fade-left}#hero .hero-bottom-svg{opacity:.5;position:absolute;bottom:-50px;left:-150px}#hero .subtitle{font-size:clamp(14px,5vw,16px);opacity:.6}#hero h2{font-size:clamp(40px, 8vw, 80px)}#hero h3{font-size:clamp(40px, 8vw, 60px);opacity:.5}#hero p{margin:20px 0 0;max-width:640px;opacity:.8}#hero .image img{padding:0;border:3px solid var(--secondary-color);border-radius:1rem}#hero .image.animate img{animation:1s ease-out fade-in;transition:box-shadow .3s}#hero .image img:hover{cursor:pointer}#hero .image.animate img:hover{box-shadow:0 0 11px rgb(15 80 100 / 20%);filter:contrast(1.2);cursor:pointer}#hero a.btn.social-icon{line-height:0;border-radius:50%;margin-top:50px;padding:.7rem;border:1px solid var(--primary-color);transition:none}#experience .nav-item .nav-link,#experience .nav-item .nav-link.active,#hero a.btn,#hero a.btn:hover{color:var(--text-color)!important}#hero a.btn.social-icon img{width:1em}#hero a.btn.social-icon:hover{opacity:.8;background-color:var(--background-color)!important;opacity:.7}#hero a.btn{margin-top:50px;padding:.7rem 1.75rem;border:1px solid var(--primary-color);border-radius:.75rem;transition:none}#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:focus,#hero a.btn:focus{box-shadow:none}#hero a.btn:hover{opacity:.9}#about a,#education .card .card-body>a h6,#hero .hero-content>a{display:inline-block;text-decoration:none;color:var(--primary-color)!important}#about h3,#achievements .card-text,#achievements h3,#contact h3,#education .container>h3,#experience h3{color:var(--text-secondary-color)!important}#about a::after,#education .card .card-body>a h6::after,#experience a::after,#hero .hero-content>a::after{content:"";display:block;width:0;height:2px;bottom:.37em;background-color:var(--primary-color);transition:.25s cubic-bezier(.645,.045,.355,1);opacity:.5}#about a:active::after,#about a:focus::after,#about a:hover::after,#education .card .card-body>a h6:active::after,#education .card .card-body>a h6:focus::after,#education .card .card-body>a h6:hover::after,#experience a:active::after,#experience a:focus::after,#experience a:hover::after,#hero .hero-content>a:active::after,#hero .hero-content>a:focus::after,#hero .hero-content>a:hover::after{width:100%}#about .image img{transition:box-shadow .3s;padding:0;border:0}#about .image img:hover{box-shadow:0 0 11px rgb(15 80 100 / 20%)}#about ul{display:grid;gap:0 10px;padding:0;margin:20px 0 0;overflow:hidden;list-style:none}#about ul li,#experience .experience-container .tab-content .tab-pane ul li{position:relative;margin-bottom:10px;padding-left:20px}#about ul li::before,#experience .experience-container .tab-content .tab-pane ul li::before{content:"▹";color:var(--primary-color);position:absolute;left:0}#about .content{font-weight:500;opacity:.9!important;line-height:1.7rem!important}#experience *{background-color:transparent!important}#experience .tab-pane>*{opacity:.9}#education .card .card-body a.btn:hover,#experience .tab-pane small{opacity:.8}#experience .tab-pane ul{padding-top:1%;padding-bottom:1%}#experience .experience-container .tab-content>.tab-pane p{padding:1% 0;margin:0}#experience .experience-container{border-radius:.75rem;box-shadow:0 8px 56px rgb(15 80 100 / 16%)}#experience .nav-item .nav-link{border-bottom:2px solid transparent;border-radius:0;transition:none;cursor:pointer}#experience .nav-item .nav-link.active{border-bottom:2px solid var(--primary-color);opacity:.8}#experience .nav-item .nav-link.active:hover{transition:none!important}#experience .nav-item .nav-link:hover{border-bottom:2px solid var(--primary-color);opacity:.8}#experience a{opacity:.9;display:inline-block;text-decoration:none;color:var(--primary-color)!important}#experience .experience-container .tab-content .tab-pane ul{overflow:hidden;list-style:none;margin-bottom:0}#experience .experience-container .tab-content .tab-pane .featuredLink a::after{display:block;width:auto;height:auto;bottom:0;background-color:transparent;transition:none;opacity:1}#experience .experience-container .tab-content .tab-pane .featuredLink a.btn{border:1px solid var(--primary-color);border-radius:.75rem;transition:none}#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:hover{color:var(--text-color)!important;opacity:.7}#education .row .index{opacity:.8;padding:13px 20px;line-height:0;border-radius:50%;max-height:50px;z-index:2;background-color:var(--primary-color)!important;color:var(--secondary-color)!important;font-weight:700}#education .card{border-radius:1.5rem;box-shadow:0 8px 56px rgb(15 80 100 / 16%);border:2px solid var(--text-secondary-color)!important;transition:transform .2s,_ .2s}#education .card .card-body{border-radius:1.5rem;padding:2rem}@media all and (max-width:768px){#education .card .card-body{padding:2rem 1rem}}#education .card:hover{transition:.3s;box-shadow:0 4px 11px rgb(15 80 100 / 16%);border:2px solid var(--primary-color)!important}#education .card .card-body .education-content a{color:var(--primary-color)!important;text-decoration:none;opacity:.9}#achievements .card h5,#education .card .card-body a.btn{color:var(--text-color)!important;opacity:.9}#education .card .card-body a.btn{border:1px solid var(--primary-color)!important;border-radius:.75rem;box-shadow:none;transition:none}#achievements a{text-decoration:none}#achievements .card{cursor:context-menu;border-radius:1rem;box-shadow:0 0 36px rgba(0,0,0,.1);transition:box-shadow .2s linear,opacity .2s linear;border:2px solid transparent}#contact form .form-control,#contact-form-status .alert,#contact-form-status button{box-shadow:0 8px 56px rgb(15 80 100 / 5%)}#achievements a.card{cursor:alias}#achievements .card:focus,#achievements .card:hover{border:2px solid var(--text-color);transition:.3s}#achievements img{border-radius:.7rem}#contact .btn{transition:opacity .3s;border-radius:.5rem!important;border-color:var(--primary-color)!important;color:var(--text-color)!important}#contact .btn:hover{opacity:.7}#contact .btn:focus{box-shadow:none!important}#contact form .form-control{background-color:var(--secondary-color);color:var(--text-color);border-radius:.7rem;border:1px solid var(--text-secondary-color)}#contact-form-status{position:fixed;bottom:10px;right:10px;z-index:1;transform:translate3d(0,0,0)}#contact-form-status svg{height:18px;width:18px}#contact-form-status button{border-radius:50%;border:none;background-color:#fff;padding:.5rem;margin-left:.5rem;font-size:.6rem!important}#contact-form-status .alert{border-radius:.5rem;padding:.5rem 1rem}
+.tooltip,
+.tooltip-inner {
+    line-height: 1rem;
+}
+#hero a.btn.social-icon,
+#hero h2 {
+    color: var(--primary-color) !important;
+}
+#about .image img,
+#hero .image img {
+    box-shadow: 0 8px 56px rgba(15, 80, 100, 0.16);
+}
+#achievements .card,
+#achievements .card-text,
+#contact .btn,
+#education .card *,
+#experience .experience-container,
+#hero a.btn:hover {
+    background-color: var(--secondary-color) !important;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-up {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+header .navbar.animate {
+    animation: 0.5s ease-in fade-up;
+}
+.tooltip {
+    border-radius: 0.5rem !important;
+}
+.tooltip .tooltip-arrow {
+    visibility: hidden !important;
+}
+#hero {
+    min-height: 100vh;
+    line-height: 2rem;
+    max-width: 100%;
+}
+#hero .content.animate {
+    animation: 1s ease-out fade-left;
+}
+#hero .hero-bottom-svg {
+    opacity: 0.5;
+    position: absolute;
+    bottom: -50px;
+    left: -150px;
+}
+#hero .subtitle {
+    font-size: clamp(14px, 5vw, 16px);
+    opacity: 0.6;
+}
+#hero h2 {
+    font-size: clamp(40px, 8vw, 80px);
+}
+#hero h3 {
+    font-size: clamp(40px, 8vw, 60px);
+    opacity: 0.5;
+}
+#hero p {
+    margin: 20px 0 0;
+    max-width: 640px;
+    opacity: 0.8;
+}
+#hero .image img {
+    padding: 0;
+    border: 3px solid var(--secondary-color);
+    border-radius: 1rem;
+}
+#hero .image.animate img {
+    animation: 1s ease-out fade-in;
+    transition: box-shadow 0.3s;
+}
+#hero .image img:hover {
+    cursor: pointer;
+}
+#hero .image.animate img:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+    filter: contrast(1.2);
+    cursor: pointer;
+}
+#hero a.btn.social-icon {
+    line-height: 0;
+    border-radius: 50%;
+    margin-top: 50px;
+    padding: 0.7rem;
+    border: 1px solid var(--primary-color);
+    transition: none;
+}
+#experience .nav-item .nav-link,
+#experience .nav-item .nav-link.active,
+#hero a.btn,
+#hero a.btn:hover {
+    color: var(--text-color) !important;
+}
+#hero a.btn.social-icon img {
+    width: 1em;
+}
+#hero a.btn.social-icon:hover {
+    opacity: 0.8;
+    background-color: var(--background-color) !important;
+    opacity: 0.7;
+}
+#hero a.btn {
+    margin-top: 50px;
+    padding: 0.7rem 1.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75rem;
+    transition: none;
+}
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:focus,
+#hero a.btn:focus {
+    box-shadow: none;
+}
+#hero a.btn:hover {
+    opacity: 0.9;
+}
+#about a,
+#education .card .card-body > a h6,
+#hero .hero-content > a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+#about h3,
+#achievements .card-text,
+#achievements h3,
+#contact h3,
+#education .container > h3,
+#experience h3 {
+    color: var(--text-secondary-color) !important;
+}
+#about a::after,
+#education .card .card-body > a h6::after,
+#experience a::after,
+#hero .hero-content > a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    bottom: 0.37em;
+    background-color: var(--primary-color);
+    transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    opacity: 0.5;
+}
+#about a:active::after,
+#about a:focus::after,
+#about a:hover::after,
+#education .card .card-body > a h6:active::after,
+#education .card .card-body > a h6:focus::after,
+#education .card .card-body > a h6:hover::after,
+#experience a:active::after,
+#experience a:focus::after,
+#experience a:hover::after,
+#hero .hero-content > a:active::after,
+#hero .hero-content > a:focus::after,
+#hero .hero-content > a:hover::after {
+    width: 100%;
+}
+#about .image img {
+    transition: box-shadow 0.3s;
+    padding: 0;
+    border: 0;
+}
+#about .image img:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+}
+#about ul {
+    display: grid;
+    gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0;
+    overflow: hidden;
+    list-style: none;
+}
+#about ul li,
+#experience .experience-container .tab-content .tab-pane ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+#about ul li::before,
+#experience .experience-container .tab-content .tab-pane ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+#about .content {
+    font-weight: 500;
+    opacity: 0.9 !important;
+    line-height: 1.7rem !important;
+}
+#experience * {
+    background-color: transparent !important;
+}
+#experience .tab-pane > * {
+    opacity: 0.9;
+}
+#education .card .card-body a.btn:hover,
+#experience .tab-pane small {
+    opacity: 0.8;
+}
+#experience .tab-pane ul {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#experience .experience-container .tab-content > .tab-pane p {
+    padding: 1% 0;
+    margin: 0;
+}
+#experience .experience-container {
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 56px rgb(15 80 100 / 16%);
+}
+#experience .nav-item .nav-link {
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    transition: none;
+    cursor: pointer;
+}
+#experience .nav-item .nav-link.active {
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 0.8;
+}
+#experience .nav-item .nav-link.active:hover {
+    transition: none !important;
+}
+#experience .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 0.8;
+}
+#experience a {
+    opacity: 0.9;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+#experience .experience-container .tab-content .tab-pane ul {
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0;
+}
+#experience .experience-container .tab-content .tab-pane .featuredLink a::after {
+    display: block;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    background-color: transparent;
+    transition: none;
+    opacity: 1;
+}
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn {
+    border: 1px solid var(--primary-color);
+    border-radius: 0.75rem;
+    transition: none;
+}
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:hover {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+#education .row .index {
+    opacity: 0.8;
+    padding: 13px 20px;
+    line-height: 0;
+    border-radius: 50%;
+    max-height: 50px;
+    z-index: 2;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    font-weight: 700;
+}
+#education .card {
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 56px rgb(15 80 100 / 16%);
+    border: 2px solid var(--text-secondary-color) !important;
+    transition: transform 0.2s, _ 0.2s;
+}
+#education .card .card-body {
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+@media all and (max-width: 768px) {
+    #education .card .card-body {
+        padding: 2rem 1rem;
+    }
+}
+#education .card:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 11px rgb(15 80 100 / 16%);
+    border: 2px solid var(--primary-color) !important;
+}
+#education .card .card-body .education-content a {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    opacity: 0.9;
+}
+#achievements .card h5,
+#education .card .card-body a.btn {
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+#education .card .card-body a.btn {
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 0.75rem;
+    box-shadow: none;
+    transition: none;
+}
+#achievements a {
+    text-decoration: none;
+}
+#achievements .card {
+    cursor: context-menu;
+    border-radius: 1rem;
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s linear, opacity 0.2s linear;
+    border: 2px solid transparent;
+}
+#contact form .form-control,
+#contact-form-status .alert,
+#contact-form-status button {
+    box-shadow: 0 8px 56px rgb(15 80 100 / 5%);
+}
+#achievements a.card {
+    cursor: alias;
+}
+#achievements .card:focus,
+#achievements .card:hover {
+    border: 2px solid var(--text-color);
+    transition: 0.3s;
+}
+#achievements img {
+    border-radius: 0.7rem;
+}
+#contact .btn {
+    transition: opacity 0.3s;
+    border-radius: 0.5rem !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+#contact .btn:hover {
+    opacity: 0.7;
+}
+#contact .btn:focus {
+    box-shadow: none !important;
+}
+#contact form .form-control {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 0.7rem;
+    border: 1px solid var(--text-secondary-color);
+}
+#contact-form-status {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+#contact-form-status svg {
+    height: 18px;
+    width: 18px;
+}
+#contact-form-status button {
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.6rem !important;
+}
+#contact-form-status .alert {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
