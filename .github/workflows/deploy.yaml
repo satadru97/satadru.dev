@@ -59,7 +59,7 @@ jobs:
       - name: Purge Unused CSS
         run: |
           npm install purgecss
-          npx purgecss --css ./public/css/styles.css --content ./public/**/*.html --out ./public/css/
+          npx purgecss --css ./public/css/styles.css --content ./public/**/*.html --output ./public/css/
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
