@@ -24,13 +24,48 @@ jobs:
 
       - name: Setup Hugo
         run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_0.124.1_linux-amd64.tar.gz'
+          HUGO_VERSION=$(curl --silent "https://api.github.com/repos/gohugoio/hugo/releases/latest" | jq -r .tag_name)
+          curl -L -o /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz"
           tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
           
       - name: Clean and Rebuild
         run: |
           rm -rf public
-          ${RUNNER_TEMP}/hugo --environment='production'
+          ${RUNNER_TEMP}/hugo --environment='production' --minify &
+          ${RUNNER_TEMP}/hugo --environment='production' --minify &
+          wait
+
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Cache Hugo Modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/hugo_modules
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+
+      - name: Gzip Compression
+        run: |
+          find public -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -9 -k {} \;
+          find public -type f \( -name "*.html.gz" -o -name "*.css.gz" -o -name "*.js.gz" \) -exec mv {} {}.gz \;
+
+      - name: Optimize Images
+        run: |
+          npm install imagemin imagemin-cli
+          npx imagemin ./public/images/* --out-dir=./public/images
+
+      - name: Inline Critical CSS
+        run: |
+          npm install critical
+          npx critical generate --base=./public --src=./public --dest=./public --width=1300 --height=900 --inline
+
+      - name: Purge Unused CSS
+        run: |
+          npm install purgecss
+          npx purgecss --css ./public/css/styles.css --content ./public/**/*.html --out ./public/css/
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
@@ -40,5 +75,5 @@ jobs:
           git add .
           git config user.name 'Satadru Mallick'
           git config user.email 'mallick@satadru.dev'
-          git commit -m 'Updated site'
+          git commit -m 'Updated site with minified and gzipped assets'
           git push          
