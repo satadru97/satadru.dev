@@ -1,10 +1,1 @@
-function readingTime() {
-  const text = document.querySelector("article").innerText;
-  const wpm = 225;
-  const words = text.trim().split(/\s+/).length;
-  const time = Math.ceil(words / wpm);
-
-  const timeElement = document.querySelector("span#readingTime");
-  timeElement.innerHTML = "<small> | </small>" + time + timeElement.innerHTML;
-}
-readingTime();
+function readingTime(){let e=document.querySelector("article").innerText,i=e.trim().split(/\s+/).length,n=document.querySelector("span#readingTime");n.innerHTML="<small> | </small>"+Math.ceil(i/225)+n.innerHTML}readingTime();
