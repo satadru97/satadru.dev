@@ -149,7 +149,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [S🙴P Global](https://www.spglobal.com/en/) in India. 
+      I am a software developer with a passion for web development. I have a background in computer science, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [S&P Global](https://www.spglobal.com/en/) in India. 
 
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
@@ -157,7 +157,7 @@ params:
       title: "Here are a few technologies I've been working with recently:"
       items:
         - C#
-        - NET, .NET Core MVC, Web API
+        - .NET, .NET Core MVC, Web API
         - SQL
         - JavaScript, HTML, CSS
         - React, Redux, Jest
@@ -169,7 +169,7 @@ params:
     # title: "Custom Name"
     items:
       - job: "Engineer II, Software Development"
-        company: "S🙴P Global"
+        company: "S&P Global"
         companyUrl: "https://www.spglobal.com/en/"
         date: "September 2023 - present"
         content: |
