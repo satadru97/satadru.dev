@@ -1,5 +1,5 @@
-relativeURLs: true
 baseURL: https://satadru97.github.io/satadru.dev
+relativeURLs: true
 languageCode: en-us
 title: Satadru Mallick
 theme: satadru-profile
@@ -52,7 +52,7 @@ params:
   title: "Satadru Mallick"
   description: Welcome to satadru.dev!
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/favicon.ico"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -147,21 +147,15 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
     content: |-
       I am a software developer with a passion for web development. I have a background in computer science, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [S&P Global](https://www.spglobal.com/en/) in India. 
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
-      items:
-        - C#
-        - .NET, .NET Core MVC, Web API
-        - SQL
-        - JavaScript, HTML, CSS
-        - React, Redux, Jest
-        - Node.js.
+      items: 
+        - Languages - C#, SQL, JavaScript, HTML, CSS
+        - Frameworks/Libraries - .NET, .NET Core MVC, Web API, React, Redux, Jest, TestCafe, Node.js
+        - Developer Tools - Git, VS Code, Visual Studio
 
   # Experience
   experience:
