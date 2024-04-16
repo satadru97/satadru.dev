@@ -59,7 +59,7 @@ jobs:
       - name: Inline Critical CSS
         run: |
           npm install critical
-          npx critical generate --base=./public --src=./public --dest=./public --width=1300 --height=900 --inline
+          npx critical generate --base=./public --src=./public --width=1300 --height=900 --inline
 
       - name: Purge Unused CSS
         run: |
