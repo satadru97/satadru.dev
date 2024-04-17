@@ -34,12 +34,6 @@ jobs:
           ${RUNNER_TEMP}/hugo --environment='production' --minify &
           wait
 
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-
       - name: Cache Hugo Modules
         uses: actions/cache@v2
         with:
@@ -51,14 +45,14 @@ jobs:
           find public -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -9 -k {} \;
           find public -type f \( -name "*.html.gz" -o -name "*.css.gz" -o -name "*.js.gz" \) -exec mv {} {}.gz \;
 
-      - name: Purge Unused CSS
+      - name: Add CNAME file
         run: |
-          npm install purgecss
-          npx purgecss --css ./public/css/styles.css --content ./public/**/*.html --output ./public/css/
+          echo "satadru.dev" > public/CNAME
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
+          rm -rf ${GITHUB_WORKSPACE}/built-site/*
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
