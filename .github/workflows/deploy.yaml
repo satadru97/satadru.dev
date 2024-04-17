@@ -51,11 +51,6 @@ jobs:
           find public -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -9 -k {} \;
           find public -type f \( -name "*.html.gz" -o -name "*.css.gz" -o -name "*.js.gz" \) -exec mv {} {}.gz \;
 
-      - name: Optimize Images
-        run: |
-          npm install imagemin imagemin-cli
-          npx imagemin ./public/images/* --out-dir=./public/images
-
       - name: Purge Unused CSS
         run: |
           npm install purgecss
