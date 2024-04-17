@@ -45,14 +45,9 @@ jobs:
           find public -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec gzip -9 -k {} \;
           find public -type f \( -name "*.html.gz" -o -name "*.css.gz" -o -name "*.js.gz" \) -exec mv {} {}.gz \;
 
-      - name: Add CNAME file
-        run: |
-          echo "satadru.dev" > public/CNAME
-
       - name: Deploy
         if: github.ref == 'refs/heads/main'
         run: |
-          rm -rf ${GITHUB_WORKSPACE}/built-site/*
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
