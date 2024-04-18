@@ -1,0 +1,21 @@
+# satadru.dev | [Website](https://satadru.dev)
+
+![](https://github.com/satadru97/satadru.dev/actions/workflows/deploy.yaml/badge.svg)
+![](https://up.satadru.dev/api/badge/1/status?upColor=%2332C955&style=flat-square) 
+![](https://up.satadru.dev/api/badge/1/uptime?color=%2332C955&style=flat-square)
+![](https://up.satadru.dev/api/badge/1/cert-exp?upColor=%2332C955&style=flat-square)
+
+# Technologies used
+- [Hugo](https://gohugo.io/)
+- [Hugo Profile](https://github.com/gurusabarish/hugo-profile)
+- [Disqus](https://disqus.com/)
+- [FormSpree](https://formspree.io/)
+- [Zipline](https://github.com/diced/zipline)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Google Analytics](https://marketingplatform.google.com/about/analytics)
+- [gzip](https://www.gzip.org/)
+- [GitHub](https://github.com/)
+- [code-server](https://github.com/coder/code-server)
+- [Cloudflare](https://www.cloudflare.com/)
+- [Oracle Cloud](https://www.oracle.com/in/cloud/)

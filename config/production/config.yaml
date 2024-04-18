@@ -16,7 +16,7 @@ outputs:
 Paginate: 3
 enableRobotsTXT: true
 disqusShortname: satadru-dev
-# googleAnalytics: G-MEASUREMENT_ID
+googleAnalytics: G-1V6GEHK3CN
 
 markup:
   goldmark:
