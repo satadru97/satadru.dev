@@ -30,8 +30,8 @@ jobs:
       - name: Clean and Rebuild
         run: |
           rm -rf public
-          ${RUNNER_TEMP}/hugo --environment='production' --minify &
-          ${RUNNER_TEMP}/hugo --environment='production' --minify &
+          ${RUNNER_TEMP}/hugo --minify &
+          ${RUNNER_TEMP}/hugo --minify &
           wait
 
       - name: Cache Hugo Modules
