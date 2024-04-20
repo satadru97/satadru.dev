@@ -24,7 +24,7 @@ toc:
 
 Time to say good bye to satad.ru!
 
-### Why a .ru domain?
+## Why a .ru domain?
 The first question is why I was using a .ru domain to begin with? Why not a more recognizable tld like .com, .in or .net? Was I not aware of the bad reputation of .ru being heavily used for scams and spams?
 
 The answer is YES! I knew it was a bad idea. I knew I will need to switch to some reputable TLDs sooner or later.
@@ -37,7 +37,7 @@ So, in 2018 I registered satad.ru from [Hostinger](https://www.hostinger.in/) an
 
 It was about to expire in May and I was about to renew it this time as well.
 
-### Why I'm switching now?
+## Why I'm switching now?
 
 ![satadru_mallick_satadru.dev_expiry_reminder_satad.ru_hostinger](https://cdn.satadru.dev/satadru_mallick_satadru.dev_expiry_reminder_satad.ru_hostinger.webp)
 
@@ -53,9 +53,9 @@ I did check with Hostinger support regarding this and turns out they are not goi
 
 So, I was left with no choice other than moving to a new domain.
 
-### Choosing a new domain
+## Choosing a new domain
 
-#### What I was looking for ####
+### What I was looking for
 
 - It should be short. Preferably myfirstname(dot)extension.
 - The extension should not have any bad reputation as that can result the website/email being blocked for some people.
@@ -63,11 +63,13 @@ So, I was left with no choice other than moving to a new domain.
 
 .com was obviously I first choice. But sadly myfirstname(dot)com was not available. 
 
-#### Why .dev? ####
+### Why .dev?
 
 - .dev is a newer TLD and particularly popular among developers. So it matches my job profile.
 - satadru.dev was available!
 - The HTTP Strict Transport Security (HSTS) preload list includes the.dev TLD. This implies that all connections to.dev domains must use HTTPS; separate HSTS registration or configuration is not necessary. It is "encrypted by default" for the.dev domain.
+
+## Domain registration
 
 After finalizing the domain name I had to choose registrar who supports .dev. I went with [Cloudflare](https://www.cloudflare.com/) because of their no markup domain price and their awesome free services (which I was using previously as well).
 
