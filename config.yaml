@@ -58,7 +58,8 @@ params:
   description: Welcome to satadru.dev, the personal website of Satadru Mallick
   # staticPath: ""  # The path to serve the static files from
   favicon: "https://cdn.satadru.dev/fav.webp"
-
+  pageNotFoundImage: "https://cdn.satadru.dev/404.webp"
+  fontawesomeCDN: "https://kit.fontawesome.com/b2c72ef77f.js"
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
   # Note the lack of "" in true, it should be of boolean type.
