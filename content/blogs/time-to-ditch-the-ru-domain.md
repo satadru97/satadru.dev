@@ -8,11 +8,11 @@ tags:
     - domain
     - www
     - tld
-    - .com
-    - .in
-    - .net
-    - .dev
-    - .ru
+    - com
+    - in
+    - net
+    - dev
+    - ru
     - russia
     - ukraine
     - hostinger
