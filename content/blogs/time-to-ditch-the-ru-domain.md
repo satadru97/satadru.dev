@@ -18,7 +18,7 @@ tags:
     - hostinger
     - cloudflare
 image: https://cdn.satadru.dev/satadru_mallick_satadru.dev_thumbnails_domain.webp
-description: "Satadru Mallick, satadru.dev, Time To Ditch The .ru Domain"
+description: "Satadru Mallick, satadru dev, satadru.dev, Time To Ditch The .ru Domain"
 toc:
 ---
 

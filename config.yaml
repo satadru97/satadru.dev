@@ -55,7 +55,7 @@ Menus:
 
 params:
   title: "Satadru Mallick"
-  description: Welcome to satadru.dev, the personal website of Satadru Mallick
+  description: Welcome to satadru dev (satadru.dev), the personal website of Satadru Mallick
   # staticPath: ""  # The path to serve the static files from
   favicon: "https://cdn.satadru.dev/fav.webp"
   pageNotFoundImage: "https://cdn.satadru.dev/404.webp"
