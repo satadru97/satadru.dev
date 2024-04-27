@@ -57,8 +57,8 @@ params:
   title: "Satadru Mallick"
   description: Welcome to satadru dev or satadrudev (satadru.dev), the personal website of Satadru Mallick
   # staticPath: ""  # The path to serve the static files from
-  favicon: "https://cdn.satadru.dev/fav.webp"
-  pageNotFoundImage: "https://cdn.satadru.dev/404.webp"
+  favicon: "https://cdn.satadru.dev/satadru.dev/images/index/fav.webp"
+  pageNotFoundImage: "https://cdn.satadru.dev/satadru.dev/images/index/404.webp"
   fontawesomeCDN: "https://kit.fontawesome.com/b2c72ef77f.js"
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -127,14 +127,14 @@ params:
     title: "Satadru."
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: https://cdn.satadru.dev/satadru.dev.webp
+    image: https://cdn.satadru.dev/satadru.dev/images/index/satadru.webp
     bottomImage:
       enable: true
     roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "https://cdn.satadru.dev/Satadru_Mallick_Resume.pdf"
+      url: "https://cdn.satadru.dev/satadru.dev/documents/index/Satadru_Mallick_Resume.pdf"
       download: true
       newPage: true
     socialLinks:
@@ -144,7 +144,7 @@ params:
         - icon: fab fa-github
           url: https://github.com/satadru97
       customIcons:
-        - icon: https://cdn.satadru.dev/fav.webp
+        - icon: https://cdn.satadru.dev/satadru.dev/images/index/fav.webp
           url: "https://satadru.dev"
 
   # About

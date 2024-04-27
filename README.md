@@ -10,7 +10,7 @@
 - [Hugo Profile](https://github.com/gurusabarish/hugo-profile)
 - [Disqus](https://disqus.com/)
 - [FormSpree](https://formspree.io/)
-- [Zipline](https://github.com/diced/zipline)
+- [Minio](https://min.io/)
 - [Font Awesome](https://fontawesome.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Google Analytics](https://marketingplatform.google.com/about/analytics)

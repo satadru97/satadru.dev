@@ -17,7 +17,7 @@ tags:
     - ukraine
     - hostinger
     - cloudflare
-image: https://cdn.satadru.dev/satadru_mallick_satadru.dev_thumbnails_domain.webp
+image: https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/thumbnail.webp
 description: "Satadru Mallick, satadru dev, satadru.dev, Time To Ditch The .ru Domain"
 toc:
 ---
@@ -39,17 +39,17 @@ It was about to expire in May and I was about to renew it this time as well.
 
 ## Why I'm switching now?
 
-![satadru_mallick_satadru.dev_expiry_reminder_satad.ru_hostinger](https://cdn.satadru.dev/satadru_mallick_satadru.dev_expiry_reminder_satad.ru_hostinger.webp)
+![expiry_reminder_satad.ru_hostinger](https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/expiry_reminder_satad.ru_hostinger.webp)
 
 Imagine my surprise when I received the above mail, offering me to renew the domain for a steal deal of 82,599.00 INR!
 
 It had to be a glitch right? So I immediately logged in to my Hostinger control panel and the final price was 97,466.82 INR!
 
-![satadru_mallick_satadru.dev_renew_satad.ru_hostinger](https://cdn.satadru.dev/satadru_mallick_satadru.dev_renew_satad.ru_hostinger.webp)
+![renew_satad.ru_hostinger](https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/renew_satad.ru_hostinger.webp)
 
 I did check with Hostinger support regarding this and turns out they are not going to provide .ru domain services anymore due to Russia Ukraine conflict.
 
-![satadru_mallick_satadru.dev_renew_satad.ru_hostinger_support](https://cdn.satadru.dev/satadru_mallick_satadru.dev_renew_satad.ru_hostinger_support.webp)
+![renew_satad.ru_hostinger_support](https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/renew_satad.ru_hostinger_support.webp)
 
 So, I was left with no choice other than moving to a new domain.
 
@@ -75,8 +75,8 @@ After finalizing the domain name I had to choose registrar who supports .dev. I 
 
 The registration process was seamless and very straight forward.
 
-![satadru_mallick_satadru.dev_registering_satadru.dev_cloudflare](https://cdn.satadru.dev/satadru_mallick_satadru.dev_registering_satadru.dev_cloudflare.webp)
+![registering_satadru.dev_cloudflare](https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/registering_satadru.dev_cloudflare.webp)
 
-![satadru_mallick_satadru.dev_registered_satadru.dev_cloudflare](https://cdn.satadru.dev/satadru_mallick_satadru.dev_registered_satadru.dev_cloudflare.webp)
+![registered_satadru.dev_cloudflare](https://cdn.satadru.dev/satadru.dev/images/blogs/1. Time To Ditch The .ru Domain/registered_satadru.dev_cloudflare.webp)
 
 That's it. Welcome to [satadru.dev](https://satadru.dev/)!
