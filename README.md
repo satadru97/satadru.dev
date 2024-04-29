@@ -5,9 +5,11 @@
 ![](https://up.satadru.dev/api/badge/1/uptime)
 ![](https://up.satadru.dev/api/badge/1/cert-exp)
 
-# [Status page](https://up.satadru.dev/status/satadru-dev)
+## [Status page](https://up.satadru.dev/status/satadru-dev)
 
-# Technologies used
+## [Change detection watch](https://changedetection.io/share/KxF-7IwpsDka)
+
+## Technologies used
 - [Hugo](https://gohugo.io/)
 - [Hugo Profile](https://github.com/gurusabarish/hugo-profile)
 - [Disqus](https://disqus.com/)
