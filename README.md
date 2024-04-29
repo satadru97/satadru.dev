@@ -1,9 +1,11 @@
 # satadru.dev | [Website](https://satadru.dev)
 
 ![](https://github.com/satadru97/satadru.dev/actions/workflows/deploy.yaml/badge.svg)
-![](https://up.satadru.dev/api/badge/1/status?upColor=%2332C955&style=flat-square) 
-![](https://up.satadru.dev/api/badge/1/uptime?color=%2332C955&style=flat-square)
-![](https://up.satadru.dev/api/badge/1/cert-exp?upColor=%2332C955&style=flat-square)
+![](https://up.satadru.dev/api/badge/1/status) 
+![](https://up.satadru.dev/api/badge/1/uptime)
+![](https://up.satadru.dev/api/badge/1/cert-exp)
+
+# [Status page](https://up.satadru.dev/status/satadru-dev)
 
 # Technologies used
 - [Hugo](https://gohugo.io/)
